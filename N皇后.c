@@ -28,7 +28,7 @@ int Place(int j){
 }
 void Nqueen(int j){
 	int i; 
-	for(i=1;i<=n;i++){
+	for(i=1;i<=n;i++){//通过第一行i的递增j是不会变的来输出所有的解决方案
 		queen[j]=i;
 		if(Place(j)&&j<=n){
 			/* 如果所有皇后都摆放好，则输出当前摆放方案*/
